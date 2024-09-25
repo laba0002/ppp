@@ -34,12 +34,42 @@
 
 h1,
 .text-wrapper {
-  font-size: 7rem;
+  font-size: 143px;
   font-family: "Outfit", sans-serif;
   font-weight: bold;
   color: var(--secondary-color-100);
 }
 
+h2,
+h3,
+p,
+mark {
+  font-family: "Outfit", sans-serif;
+  color: var(--primary-color-100);
+}
+
+h2 {
+  font-size: 64px;
+  color: var(--accent-color-100);
+}
+
+h3 {
+  font-size: 27px;
+}
+
+mark {
+  background-color: transparent;
+  color: var(--secondary-color-100);
+}
+
+p {
+  font-size: 24px;
+}
+
 .text-wrapper .box h1 {
   color: var(--accent-color-100);
+}
+
+.shadow {
+  box-shadow: 153px 102px 52px 0px rgba(138, 138, 138, 0), 98px 65px 47px 0px rgba(138, 138, 138, 0.01), 55px 37px 40px 0px rgba(138, 138, 138, 0.05), 25px 16px 29px 0px rgba(138, 138, 138, 0.09), 6px 4px 16px 0px rgba(138, 138, 138, 0.1);
 }
