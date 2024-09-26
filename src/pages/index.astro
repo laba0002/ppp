@@ -8,26 +8,32 @@ import swirl from "../assets/images/swirl.svg"
 import miniswirl from "../assets/images/miniswirl.svg"
 import Titel from "../components/Titel.astro"
 import portrait from "../assets/images/portrait.png"
+import Skills from "../components/Skills.astro"
 ---
 <MainLayout title="Titel">
 	
-<div class="relative flex flex-col gap-28">
-		<Titel ></Titel>
+<div class="relative flex flex-col lg:gap-28">
+		<Titel></Titel>
 		<div class="absolute top-0">
-			<Image class=" hidden md:block" src={swirl} alt="swirl"/>
-			<!-- <Image class="block md:hidden" src={miniswirl} alt="mobilswirl"/> -->
+			<!-- <Image class=" hidden md:block" src={swirl} alt="swirl"/> -->
+			 <Image class="block md:hidden w-[500px] z-[-50]" src={miniswirl} alt="mobilswirl"/>
 		</div>
 
 
-	<section class="md:grid md:grid-cols-2">
-		<div class="z-10 ml-32"><Image class="w-[550] border-[var(--accent-color-200)] border-[13px] shadow rounded-[60px] " src={portrait} alt="portrætbillede af Laura Backe"/></div>
-		<div class="mt-20 flex flex-col gap-4">
+	<section class=" z-10 grid lg:grid-cols-2  mt-14">
+		<div class="z-10 lg:ml-28 mt-8"><Image class=" border-[var(--accent-color-200)] border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
+		<div class="lg:mt-32 flex flex-col gap-4 w-[400px] lg:w-[640px]">
 			<h3>Mit navn er Laura Backe</h3>
 			<p>Jeg er en <mark>multimediedesignstuderende</mark> på KEA og selvudnævnt digital designer, med øje for lækre farvekombinationer og en forkærlighed for sjove grafiske motiver. Mine ambitioner er tit (for) høje og jeg prioriterer altid et <mark>unikt design</mark> som kan bære sig selv.
 			</p>
 			<p>
 				Jeg arbejder pt som <mark>butiks-, produktion- og digital medarbejder</mark> hos SCHERNING København, hvor jeg har bla ansvarsområder indenfor deres Shopify samt photoshopper produktsbilleder til webshoppen og SoMe.</p>
 		</div>
+	</section>
+
+	<section class="z-10 mt-[500px]">
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione fugit pariatur non doloremque perspiciatis impedit, animi temporibus delectus optio esse blanditiis culpa eum, asperiores architecto atque, distinctio a molestiae molestias.</p>
+		<Skills></Skills>
 	</section>
 
 </div>
