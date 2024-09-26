@@ -9,19 +9,21 @@ import miniswirl from "../assets/images/miniswirl.svg"
 import Titel from "../components/Titel.astro"
 import portrait from "../assets/images/portrait.png"
 import Skills from "../components/Skills.astro"
+import Projekter from "../components/Projekter.astro";
+import Info from "../components/Info.astro";
 ---
 <MainLayout title="Titel">
 	
 <div class="relative flex flex-col lg:gap-28">
 		<Titel></Titel>
 		<div class="absolute top-0">
-			<!-- <Image class=" hidden md:block" src={swirl} alt="swirl"/> -->
-			 <Image class="block md:hidden w-[500px] z-[-50]" src={miniswirl} alt="mobilswirl"/>
+			<Image class="z-[-50] hidden md:block " src={swirl} alt="swirl"/>
+			 <!-- <Image class="block md:hidden w-[500px] z-[-50]" src={miniswirl} alt="mobilswirl"/> -->
 		</div>
 
 
-	<section class=" z-10 grid lg:grid-cols-2  mt-14">
-		<div class="z-10 lg:ml-28 mt-8"><Image class=" border-[var(--accent-color-200)] border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
+	<section class="z-20 grid lg:grid-cols-2  mt-14">
+		<div class="z-20 lg:ml-28 mt-8"><Image class=" border-[var(--accent-color-200)] border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
 		<div class="lg:mt-32 flex flex-col gap-4 w-[400px] lg:w-[640px]">
 			<h3>Mit navn er Laura Backe</h3>
 			<p>Jeg er en <mark>multimediedesignstuderende</mark> på KEA og selvudnævnt digital designer, med øje for lækre farvekombinationer og en forkærlighed for sjove grafiske motiver. Mine ambitioner er tit (for) høje og jeg prioriterer altid et <mark>unikt design</mark> som kan bære sig selv.
@@ -31,9 +33,43 @@ import Skills from "../components/Skills.astro"
 		</div>
 	</section>
 
-	<section class="z-10 mt-[500px]">
-		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione fugit pariatur non doloremque perspiciatis impedit, animi temporibus delectus optio esse blanditiis culpa eum, asperiores architecto atque, distinctio a molestiae molestias.</p>
-		<Skills></Skills>
+
+	<section class="lg:grid lg:grid-cols-2  lg:mt-[160px] lg:mb-[100px] lg:ml-[80px] z-[50]">
+<div class="lg:w-[690px] mt-[20px] flex flex-col gap-4 z-10">
+	<h2>mine skills</h2>
+	<p>Under min uddannelse har jeg lært samtlige teknikker, som jeg bruger i mine projekter. Før jeg starter et projekt laver jeg en research, hvor jeg går ind og kigger på både brugerne af løsningen men også de trends og UI patterns som andre løsninger bruger sig af, til enten inspiration eller se hvordan man kan skille sig ud.
+	</p>
+	<p>
+		Jeg arbejder med grafisk design ved hjælp af værktøjer som Adobe Illustrator og Photoshop. Her skaber jeg visuelle elementer, logoer og ikoner, som integreres i de digitale løsninger og bidrager til en stærk visuel identitet. 
+	</p>
+	<p>
+		I mine processer skaber jeg interaktive og levende figma prototyper, som jeg så koder ud fra i vscode. Ud over HTML, CSS, og lidt JavaScript, benytter jeg mig af  tailwind, astro, animate.css og alpine.
+	</p>
+	<p>
+		For mig er det spændende og tilfredsstillende, at være involveret i et projekt fra idé til færdig løsning.
+	</p>
+</div>
+
+	<div class="z-10">	
+		<Skills></Skills></div>
+	</section>
+
+	<section class="z-[50] m-[50px]">
+		<Projekter></Projekter>
+	</section>
+
+	<section class="ml-[50px] mt-[300px] z-[50]">
+<div class="lg:grid lg:grid-cols-2 bg-[var(--accent-color-100)] h-full w-[1000px]">
+	<div>
+		<h2 class="text-[var(--accent-color-200)]">jeg leder efter...</h2>
+		<p>En arbejdsplads som kan udfordre og guide mig. Jeg er spændt på at prøve mine kræfter af og bruge de værktøjer jeg har lært på KEA i rigtigt arbejdsmiljø. </p>
+		<p>Jeg vil rigtig gerne prøve arbejdsopgaver af, vedrørende digitalt design, om det er i figma, illustrator eller et tredje program som I mener jeg skal lære - jeg er klar på hvad end, I kan kan byde!</p>
+	</div>
+	<div>
+		<Info></Info>
+	</div>
+
+</div>
 	</section>
 
 </div>
