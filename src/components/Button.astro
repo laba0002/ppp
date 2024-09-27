@@ -1,5 +1,27 @@
 ---
+const {variant="primary", size="medium"} = Astro.props;
+
+const buttonStyling = 
+    "uppercase p-[10px] gap-[10px] flex content-center items-center transition ease-in-out"
+;
+
+const sizeClasses = {
+"large": "text-2xl",
+"medium": "text-xl",
+"small": "text-md"
+};
+
+const variantClasses ={
+    "primary": " shawdow border-2 border-[var(--accent-color-200)] bg-[#FF9ABB]  text-[var(--accent-color-200)] hover:bg-[#FFB0CA] hover:border-[var(--secondary-color-100)] hover:text-[var(--secondary-color-100)]",
+    "secondary": "shawdow border-2 border-[#FFB0CA] bg-[var(--accent-color-200)]  text-[#FF9ABB] hover:bg-[#FFB0CA] hover:border-[var(--secondary-color-100)] hover:text-[var(--secondary-color-100)]"
+};
+
 ---
-<div>
-    <button class="border-2 border-black"><slot /></button>
-</div>
+<!-- <div>
+    <button class="uppercase font-sans text-xl py-2 px-8 rounded
+    border-2 border-pink-400 bg-pink-50 text-grey-400 
+    hover:bg-pink-400 hover:text-pink-50 hover:shadow-md  
+    focus:shadow-none transition ease-in-out delay-75"><slot /></button>
+</div> -->
+
+<button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot/></button>
