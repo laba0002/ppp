@@ -31,3 +31,23 @@ import gradient from "../assets/images/ppp_gradient.svg"
 			
 	</body>
 </html>
+
+<style>
+	body {
+		background: linear-gradient(57deg, rgba(255, 220, 166, 1) 0%, rgba(239, 139, 104, 1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+</style>
