@@ -18,19 +18,19 @@ import Info from "../components/Info.astro";
 <MainLayout title="Titel">
 	
 <div class="relative flex flex-col lg:gap-28">
-		<div class="grid grid-cols-2 z-20">
-			<div class="lg:col-span-2"><Titel></Titel></div>
+		<div class="grid grid-cols-2 z-20 mt-4 lg:mt-0">
+			<div class="lg:col-span-2 mr-4 md:mr-0"><Titel></Titel></div>
 			<Image class=" block md:hidden border-[var(--accent-color-200)] border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/>
 		</div>
 		<div class="absolute top-0">
 			<Image class="z-[-50] hidden md:block " src={swirl} alt="swirl"/>
-			 <Image class="block md:hidden w-[500px] z-[-50] " src={topswirl} alt="mobilswirl"/>
-			 <Image class="block md:hidden w-[500px] z-[-50]" src={bottomswirl} alt="mobilswirl"/>
+			<div class=" block md:hidden w-[500px] -translate-y-10 z-[-50] "> <Image class="" src={topswirl} alt="mobilswirl"/></div>
+			 <Image class="block md:hidden w-[500px] z-[-50] " src={bottomswirl} alt="mobilswirl"/>
 		</div>
 
 	<section class="z-20 grid lg:grid-cols-2  mt-14 section2">
 		<div class=" z-[-50] hidden md:block lg:ml-28 mt-8"><Image class=" border-[var(--accent-color-200)] mt-4 border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
-		<div class="lg:mt-32 flex flex-col gap-4 p-2 w-[500px] lg:w-[640px]">
+		<div class="lg:mt-32 mx-2 flex flex-col gap-4 p-2 w-[500px] lg:w-[640px]">
 			<h3>Mit navn er Laura Backe</h3>
 			<p>Jeg er en <mark>multimediedesignstuderende</mark> på KEA og selvudnævnt digital designer, med øje for lækre farvekombinationer og en forkærlighed for sjove grafiske motiver. Mine ambitioner er tit (for) høje og jeg prioriterer altid et <mark>unikt design</mark> som kan bære sig selv.
 			</p>
@@ -41,7 +41,7 @@ import Info from "../components/Info.astro";
 
 
 	<section class="bg-[#FDE3CB] md:bg-transparent mt-[50px] lg:grid lg:grid-cols-2  lg:mt-[160px] lg:mb-[90px] lg:ml-[80px] z-[50] section3">
-		<div class="lg:w-[690px] p-2 w-[500px] mt-[30px] flex flex-col gap-4 z-10">
+		<div class="lg:w-[690px]  mx-2 p-2 w-[500px] mt-[30px] flex flex-col gap-4 z-10">
 			<h2>mine skills</h2>
 			<p>Under min uddannelse har jeg lært samtlige teknikker, som jeg bruger i mine projekter. Før jeg starter et projekt laver jeg en research, hvor jeg går ind og kigger på både brugerne af løsningen men også de trends og UI patterns som andre løsninger bruger sig af, til enten inspiration eller se hvordan man kan skille sig ud.
 			</p>
@@ -64,7 +64,7 @@ import Info from "../components/Info.astro";
 	</section>
 
 	<section class="ml-[50px] mb-11 z-[50] section5">
-<div class="lg:grid lg:grid-cols-2 bg-[var(--accent-color-100)] h-full w-[400px] lg:w-[1000px] rounded-[60px] shadow p-10">
+<div class="lg:grid lg:grid-cols-2  mx-2 bg-[var(--accent-color-100)] h-full w-[400px] lg:w-[1000px] rounded-[60px] shadow p-10">
 	<div class="flex flex-col gap-2">
 		<h2 class="text-[var(--accent-color-200)] mb-[10px]">jeg leder efter...</h2>
 		<p>En arbejdsplads som kan udfordre og guide mig. Jeg er spændt på at prøve mine kræfter af og bruge de værktøjer jeg har lært på KEA i rigtigt arbejdsmiljø. </p>
