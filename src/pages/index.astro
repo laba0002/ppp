@@ -17,16 +17,18 @@ import Info from "../components/Info.astro";
 <MainLayout title="Titel">
 	
 <div class="relative flex flex-col lg:gap-28">
-		<Titel></Titel>
+		<div class="grid grid-cols-2 z-20">
+			<div class="lg:col-span-2"><Titel></Titel></div>
+			<Image class=" block md:hidden border-[var(--accent-color-200)] border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
 		<div class="absolute top-0">
 			<Image class="z-[-50] hidden md:block " src={swirl} alt="swirl"/>
-			 <Image class="block md:hidden w-[500px] z-[-50]" src={topswirl} alt="mobilswirl"/>
+			 <Image class="block md:hidden w-[500px] z-[-50] " src={topswirl} alt="mobilswirl"/>
 			 <Image class="block md:hidden w-[500px] z-[-50]" src={bottomswirl} alt="mobilswirl"/>
 		</div>
 
 
 	<section class="z-20 grid lg:grid-cols-2  mt-14 section2">
-		<div class="z-20 lg:ml-28 mt-8"><Image class=" border-[var(--accent-color-200)] border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
+		<div class=" z-[-50] hidden md:block lg:ml-28 mt-8"><Image class=" border-[var(--accent-color-200)] mt-4 border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
 		<div class="lg:mt-32 flex flex-col gap-4 p-2 w-[500px] lg:w-[640px]">
 			<h3>Mit navn er Laura Backe</h3>
 			<p>Jeg er en <mark>multimediedesignstuderende</mark> på KEA og selvudnævnt digital designer, med øje for lækre farvekombinationer og en forkærlighed for sjove grafiske motiver. Mine ambitioner er tit (for) høje og jeg prioriterer altid et <mark>unikt design</mark> som kan bære sig selv.
@@ -60,12 +62,12 @@ import Info from "../components/Info.astro";
 		<Projekter></Projekter>
 	</section>
 
-	<section class="ml-[50px] mt-[110px] mb-11 z-[50] section5">
+	<section class="ml-[50px] mt-[20px] mb-11 z-[50] section5">
 <div class="lg:grid lg:grid-cols-2 bg-[var(--accent-color-100)] h-full w-[400px] lg:w-[1000px] rounded-[60px] shadow p-10">
 	<div class="flex flex-col gap-2">
 		<h2 class="text-[var(--accent-color-200)] mb-[5px]">jeg leder efter...</h2>
 		<p>En arbejdsplads som kan udfordre og guide mig. Jeg er spændt på at prøve mine kræfter af og bruge de værktøjer jeg har lært på KEA i rigtigt arbejdsmiljø. </p>
-		<p>Jeg vil rigtig gerne prøve arbejdsopgaver af, vedrørende digitalt design, om det er i figma, illustrator eller et tredje program som I mener jeg skal lære - jeg er klar på hvad end, I kan kan byde!</p>
+		<p>Jeg vil rigtig gerne prøve arbejdsopgaver af, vedrørende digitalt design, om det er i figma, illustrator eller et tredje program som I mener jeg skal lære - jeg er klar på hvad end, I har at byde!</p>
 	</div>
 	<div class="ml-8">
 		<Info></Info>
