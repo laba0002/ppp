@@ -5,6 +5,12 @@ import '../styles/tailwind.css';
 import 'animate.css';
 const { title } = Astro.props;
 import gradient from "../assets/images/gradient1.png"
+import {
+  BackgroundImage,
+  ImageSupportDetection,
+} from "astro-imagetools/components";
+
+const content = await fetch(import.meta.env.CONTENT_URL).then((r) => r.text());
 ---
 <html lang="en">
 	<head>
@@ -15,6 +21,17 @@ import gradient from "../assets/images/gradient1.png"
 		<title>{Astro.props.title}</title>
 	</head>
 	<body class="background">
+		<BackgroundImage
+		src="/src/assets/images/gradient1.png"
+		artDirectives={[
+		  {
+			src: "/src/assets/images/gradient1.png",
+			media: "(orientation: potrait)",
+		  },
+		]}
+	  >
+		<Fragment set:html={content} />
+	  </BackgroundImage>
 
 		<header>
 			<Header></Header>
