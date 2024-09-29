@@ -9,16 +9,16 @@ import starFill from "../assets/images/star.svg"
 import NoStar from "../assets/images/nostar.svg"
 ---
 
-<div class="ml-12 mt-28 flex flex-col gap-[30px]">
-    <div class="flex flex-row gap-[40px]">
-        <Image src={figma} alt="figma ikon"/>
+<div class="container mt-10 lg:ml-12 lg:mt-28 flex flex-col gap-[30px] w-[300px]">
+    <div class="flex flex-row gap-[40px] w-[100px] transition-all ease-in-out hover:scale-105">
+        <Image  src={figma} alt="figma ikon"/>
         <Image src={starFill} alt="star "/>
         <Image src={starFill} alt="star "/>
         <Image src={starFill} alt="star "/>
         <Image src={starFill} alt="star "/>
         <Image src={NoStar} alt="star not "/>
     </div>
-    <div class="flex flex-row gap-[40px]">
+    <div class="flex flex-row gap-[40px] w-[300px] transition-all ease-in-out hover:scale-105">
         <Image src={illustrator} alt="illustrator ikon"/>
         <Image src={starFill} alt="star "/>
         <Image src={starFill} alt="star "/>
@@ -26,7 +26,7 @@ import NoStar from "../assets/images/nostar.svg"
         <Image src={starFill} alt="star "/>
         <Image src={NoStar} alt="star not "/>
     </div>
-    <div class="flex flex-row gap-[40px]">
+    <div class="flex flex-row gap-[40px] w-[300px] transition-all ease-in-out hover:scale-105">
         <Image src={photoshop} alt="photoshop ikon"/>
         <Image src={starFill} alt="star "/>
         <Image src={starFill} alt="star "/>
@@ -34,7 +34,7 @@ import NoStar from "../assets/images/nostar.svg"
         <Image src={NoStar} alt="star not "/>
         <Image src={NoStar} alt="star not "/>
     </div>
-    <div class="flex flex-row gap-[40px]">
+    <div class="flex flex-row gap-[40px] w-[300px] transition-all ease-in-out hover:scale-105">
         <Image src={vscode} alt="vscode ikon"/>
         <Image src={starFill} alt="star "/>
         <Image src={starFill} alt="star "/>
@@ -42,7 +42,7 @@ import NoStar from "../assets/images/nostar.svg"
         <Image src={starFill} alt="star "/>
         <Image src={NoStar} alt="star not "/>
     </div>
-    <div class="flex flex-row gap-[40px]">
+    <div class="flex flex-row gap-[40px] w-[300px] transition-all ease-in-out hover:scale-105">
         <Image src={premiere} alt="premiere pro ikon"/>
         <Image src={starFill} alt="star "/>
         <Image src={starFill} alt="star "/>
@@ -52,3 +52,40 @@ import NoStar from "../assets/images/nostar.svg"
     </div>
 
 </div>
+
+<style>
+
+@media (max-width: 640px) {
+  .flex {
+    gap: 20px; /* Reduce the gap for mobile */
+  }
+
+  .container {
+    margin: 10px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  
+  /* .w-[300px] {
+    width: 100%; 
+
+  .w-[100px] {
+    width: auto;
+  } */
+/* 
+  .lg\:ml-12 {
+    margin-left: 0;
+  } */
+
+
+  .lg\:mt-28 {
+    margin-top: 20px; /* Adjust top margin for mobile */
+  }
+
+  img {
+    width: 50px; /* Reduce icon size for mobile */
+  }
+}
+
+</style>

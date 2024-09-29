@@ -5,7 +5,7 @@ import F from "../assets/images/Vector-1.svg"
 import N from "../assets/images/Vector-2.svg"
 import I from "../assets/images/Vector-3.svg"
 ---
-
+<!-- 
 <div class="ml-4 mt-8 flex flex-col flex-start  gap-[30px]">
 <div class="flex flex-row">
     <Image src={I} alt="I"/>
@@ -27,4 +27,42 @@ import I from "../assets/images/Vector-3.svg"
     <span>+45 42 77 59 91</span>
 </div>
 
+</div> -->
+<!-- 
+<div class="grid grid-cols-2 ">
+<div>
+    <Image src={I} alt="I"/>
+    <Image src={N} alt="N"/>
+    <Image src={F} alt="F"/>
+    <Image src={O} alt="O"/>
 </div>
+<div>
+    <span>19. oktober, 2001</span>
+    <span>Ingrid Marievej 12, 2500 Valby</span>
+    <span>L.backe19@gmail.com</span>
+    <span>+45 42 77 59 91</span>
+</div>
+</div> -->
+
+<div class="lg:ml-4 mt-8 grid grid-rows-4 gap-[30px]">
+    <div class="grid grid-cols-3 transition-all ease-in-out hover:scale-105">
+      <div class="ml-4">  <Image  src={I} alt="I"/></div>
+        <span class="col-span-2">19. oktober, 2001</span>
+    </div>
+    
+    <div class="grid grid-cols-3 transition-all ease-in-out hover:scale-105">
+        <div class="ml-2"><Image src={N} alt="N"/></div>
+        <span class="col-span-2">Ingrid Marievej 12, 2500 Valby</span>
+    </div>
+    
+    <div class="grid grid-cols-3 transition-all ease-in-out hover:scale-105">
+        <div class="ml-2"><Image src={F} alt="F"/></div>
+        <span class="col-span-2">L.backe19@gmail.com</span>
+    </div>
+    
+    <div class="grid grid-cols-3 transition-all ease-in-out hover:scale-105">
+        <Image src={O} alt="O"/>
+        <span class="col-span-2">+45 42 77 59 91</span>
+    </div>
+    
+    </div>
