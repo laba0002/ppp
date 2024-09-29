@@ -6,6 +6,8 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 import swirl from "../assets/images/swirl.svg"
 import miniswirl from "../assets/images/miniswirl.svg"
+import topswirl from "../assets/images/top.svg"
+import bottomswirl from "../assets/images/bottom.svg"
 import Titel from "../components/Titel.astro"
 import portrait from "../assets/images/portrait.png"
 import Skills from "../components/Skills.astro"
@@ -18,13 +20,14 @@ import Info from "../components/Info.astro";
 		<Titel></Titel>
 		<div class="absolute top-0">
 			<Image class="z-[-50] hidden md:block " src={swirl} alt="swirl"/>
-			 <!-- <Image class="block md:hidden w-[500px] z-[-50]" src={miniswirl} alt="mobilswirl"/> -->
+			 <Image class="block md:hidden w-[500px] z-[-50]" src={topswirl} alt="mobilswirl"/>
+			 <Image class="block md:hidden w-[500px] z-[-50]" src={bottomswirl} alt="mobilswirl"/>
 		</div>
 
 
-	<section class="z-20 grid lg:grid-cols-2  mt-14">
+	<section class="z-20 grid lg:grid-cols-2  mt-14 section2">
 		<div class="z-20 lg:ml-28 mt-8"><Image class=" border-[var(--accent-color-200)] border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
-		<div class="lg:mt-32 flex flex-col gap-4 w-[400px] lg:w-[640px]">
+		<div class="lg:mt-32 flex flex-col gap-4 p-2 w-[500px] lg:w-[640px]">
 			<h3>Mit navn er Laura Backe</h3>
 			<p>Jeg er en <mark>multimediedesignstuderende</mark> på KEA og selvudnævnt digital designer, med øje for lækre farvekombinationer og en forkærlighed for sjove grafiske motiver. Mine ambitioner er tit (for) høje og jeg prioriterer altid et <mark>unikt design</mark> som kan bære sig selv.
 			</p>
@@ -34,35 +37,32 @@ import Info from "../components/Info.astro";
 	</section>
 
 
-	<section class="lg:grid lg:grid-cols-2  lg:mt-[160px] lg:mb-[90px] lg:ml-[80px] z-[50]">
-<div class="lg:w-[690px] mt-[20px] flex flex-col gap-4 z-10">
-	<h2>mine skills</h2>
-	<p>Under min uddannelse har jeg lært samtlige teknikker, som jeg bruger i mine projekter. Før jeg starter et projekt laver jeg en research, hvor jeg går ind og kigger på både brugerne af løsningen men også de trends og UI patterns som andre løsninger bruger sig af, til enten inspiration eller se hvordan man kan skille sig ud.
-	</p>
-	<p>
-		Jeg arbejder med grafisk design ved hjælp af værktøjer som Adobe Illustrator og Photoshop. Her skaber jeg visuelle elementer, logoer og ikoner, som integreres i de digitale løsninger og bidrager til en stærk visuel identitet. 
-	</p>
-	<p>
-		I mine processer skaber jeg interaktive og levende figma prototyper, som jeg så koder ud fra i vscode. Ud over HTML, CSS, og lidt JavaScript, benytter jeg mig af  tailwind, astro, animate.css og alpine.
-	</p>
-	<p>
-		For mig er det spændende og tilfredsstillende, at være involveret i et projekt fra idé til færdig løsning.
-	</p>
-</div>
+	<section class="bg-[#FDE3CB] md:bg-transparent mt-[50px] lg:grid lg:grid-cols-2  lg:mt-[160px] lg:mb-[90px] lg:ml-[80px] z-[50] section3">
+		<div class="lg:w-[690px] p-2 w-[500px] mt-[30px] flex flex-col gap-4 z-10">
+			<h2>mine skills</h2>
+			<p>Under min uddannelse har jeg lært samtlige teknikker, som jeg bruger i mine projekter. Før jeg starter et projekt laver jeg en research, hvor jeg går ind og kigger på både brugerne af løsningen men også de trends og UI patterns som andre løsninger bruger sig af, til enten inspiration eller se hvordan man kan skille sig ud.
+			</p>
+			<p>Jeg arbejder med grafisk design ved hjælp af værktøjer som Adobe Illustrator og Photoshop. Her skaber jeg visuelle elementer, logoer og ikoner, som integreres i de digitale løsninger og bidrager til en stærk visuel identitet. 
+			</p>
+			<p>I mine processer skaber jeg interaktive og levende figma prototyper, som jeg så koder ud fra i vscode. Ud over HTML, CSS, og lidt JavaScript, benytter jeg mig af  tailwind, astro, animate.css og alpine.
+			</p>
+			<p>For mig er det spændende og tilfredsstillende, at være involveret i et projekt fra idé til færdig løsning.</p>
+		</div>
 
-	<div class="z-10">	
-		<Skills></Skills></div>
+		
+		<Skills></Skills>
+	
 	</section>
 
-	<section class="z-[50] m-[50px]">
+	<section class="z-[50] m-[50px] section4">
 		<h2 class="mb-2 text-[var(--accent-color-200)]">tidligere projekter</h2>
 		<Projekter></Projekter>
 	</section>
 
-	<section class="ml-[50px] mt-[300px] z-[50]">
-<div class="lg:grid lg:grid-cols-2 bg-[var(--accent-color-100)] h-full w-[1000px] rounded-[60px] shadow p-10">
-	<div>
-		<h2 class="text-[var(--accent-color-200)]">jeg leder efter...</h2>
+	<section class="ml-[50px] mt-[110px] mb-11 z-[50] section5">
+<div class="lg:grid lg:grid-cols-2 bg-[var(--accent-color-100)] h-full w-[400px] lg:w-[1000px] rounded-[60px] shadow p-10">
+	<div class="flex flex-col gap-2">
+		<h2 class="text-[var(--accent-color-200)] mb-[5px]">jeg leder efter...</h2>
 		<p>En arbejdsplads som kan udfordre og guide mig. Jeg er spændt på at prøve mine kræfter af og bruge de værktøjer jeg har lært på KEA i rigtigt arbejdsmiljø. </p>
 		<p>Jeg vil rigtig gerne prøve arbejdsopgaver af, vedrørende digitalt design, om det er i figma, illustrator eller et tredje program som I mener jeg skal lære - jeg er klar på hvad end, I kan kan byde!</p>
 	</div>
@@ -76,3 +76,39 @@ import Info from "../components/Info.astro";
 </div>
 
 </MainLayout>
+
+
+<script>
+	import { inView } from "motion";
+
+	const inviewelement = document.querySelector(".section1");
+	inView(
+		inviewelement , () => {
+			inviewelement.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+		const inviewelement1 = document.querySelector(".section2");
+	inView(
+		inviewelement1 , () => {
+			inviewelement1.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+		
+		const inviewelement2 = document.querySelector(".section3");
+	inView(
+		inviewelement2 , () => {
+			inviewelement2.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement3 = document.querySelector(".section4");
+	inView(
+		inviewelement3 , () => {
+			inviewelement3.classList.add("animate__animated","animate__fadeIn", "animate__delay-1s")
+		})
+
+		const inviewelement4 = document.querySelector(".section5");
+	inView(
+		inviewelement4 , () => {
+			inviewelement4.classList.add("animate__animated","animate__fadeInUp", "animate__delay-1s")
+		})
+
+</script>
