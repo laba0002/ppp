@@ -7,6 +7,7 @@ import thumbsup from "../assets/images/thumbsup.png";
 import swirl from "../assets/images/swirl.svg"
 import miniswirl from "../assets/images/miniswirl.svg"
 import topswirl from "../assets/images/top.svg"
+import star from "../assets/images/Star 6.svg"
 import bottomswirl from "../assets/images/bottom.svg"
 import Titel from "../components/Titel.astro"
 import portrait from "../assets/images/portrait.png"
@@ -19,13 +20,13 @@ import Info from "../components/Info.astro";
 <div class="relative flex flex-col lg:gap-28">
 		<div class="grid grid-cols-2 z-20">
 			<div class="lg:col-span-2"><Titel></Titel></div>
-			<Image class=" block md:hidden border-[var(--accent-color-200)] border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
+			<Image class=" block md:hidden border-[var(--accent-color-200)] border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/>
+		</div>
 		<div class="absolute top-0">
 			<Image class="z-[-50] hidden md:block " src={swirl} alt="swirl"/>
 			 <Image class="block md:hidden w-[500px] z-[-50] " src={topswirl} alt="mobilswirl"/>
 			 <Image class="block md:hidden w-[500px] z-[-50]" src={bottomswirl} alt="mobilswirl"/>
 		</div>
-
 
 	<section class="z-20 grid lg:grid-cols-2  mt-14 section2">
 		<div class=" z-[-50] hidden md:block lg:ml-28 mt-8"><Image class=" border-[var(--accent-color-200)] mt-4 border-8 lg:border-[13px] shadow rounded-[60px] w-[200px] lg:w-[550px]" src={portrait} alt="portrætbillede af Laura Backe"/></div>
@@ -65,7 +66,7 @@ import Info from "../components/Info.astro";
 	<section class="ml-[50px] mb-11 z-[50] section5">
 <div class="lg:grid lg:grid-cols-2 bg-[var(--accent-color-100)] h-full w-[400px] lg:w-[1000px] rounded-[60px] shadow p-10">
 	<div class="flex flex-col gap-2">
-		<h2 class="text-[var(--accent-color-200)] mb-[5px]">jeg leder efter...</h2>
+		<h2 class="text-[var(--accent-color-200)] mb-[10px]">jeg leder efter...</h2>
 		<p>En arbejdsplads som kan udfordre og guide mig. Jeg er spændt på at prøve mine kræfter af og bruge de værktøjer jeg har lært på KEA i rigtigt arbejdsmiljø. </p>
 		<p>Jeg vil rigtig gerne prøve arbejdsopgaver af, vedrørende digitalt design, om det er i figma, illustrator eller et tredje program som I mener jeg skal lære - jeg er klar på hvad end, I har at byde!</p>
 	</div>
